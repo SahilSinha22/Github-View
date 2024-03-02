@@ -29,7 +29,7 @@ export const likeProfile = async (req,res) => {
 	try {
 		const { username } = req.params;
 		const user = await User.findById(req.user._id.toString());
-		console.log(user,"auth user");
+		
 		const userToLike = await User.findOne({username});
 
 		if(!userToLike){

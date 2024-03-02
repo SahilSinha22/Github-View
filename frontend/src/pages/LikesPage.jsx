@@ -20,7 +20,7 @@ const LikesPage = () => {
 		};
 		getLikes();
 	}, []);
-	console.log("likes:", likes);
+	
 	return (
 		<div className="relative overflow-x-auto shadow-md rounded-lg px-4">
 			<table className="w-full text-sm text-left rtl:text-right bg-glass overflow-hidden">

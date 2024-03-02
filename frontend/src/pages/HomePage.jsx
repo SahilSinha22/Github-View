@@ -25,8 +25,7 @@ try {
 
 		repos.sort((a,b) => new Date(b.created_at) - new Date(a.created_at)); //descending
 		setRepos(repos);
-console.log("userProfile:",userProfile);
-console.log("repos:",repos);
+
 setUserProfile(userProfile);
 
 return{userProfile,repos};
